@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Care Helper</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1>Plant Care Helper</h1>
+
+  <label for="plantSelect">Choose a plant:</label>
+  <select id="plantSelect">
+    <option value="">-- Select --</option>
+    <option value="succulent">Succulent</option>
+    <option value="snake">Snake Plant</option>
+    <option value="pothos">Pothos</option>
+  </select>
+
+  <button id="infoBtn">Show Info</button>
+
+  <p id="plantInfo"></p>
+
+  <h2>Water Calculator</h2>
+  <label>Humidity (0–100):</label>
+  <input id="humidityInput" type="number">
+
+  <button id="calcBtn">Calculate Watering</button>
+
+  <p id="waterResult"></p>
+
+</body>
+</html>
