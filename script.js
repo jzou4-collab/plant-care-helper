@@ -18,22 +18,18 @@ function getPlantInfo(plant) {
 document.getElementById("infoBtn").addEventListener("click", function () {
   let plant = document.getElementById("plantSelect").value;
 
-  // DOM manipulation (required)
   document.getElementById("plantInfo").textContent = getPlantInfo(plant);
 });
 
-// Second event (required)
 document.getElementById("calcBtn").addEventListener("click", function () {
   let humidity = parseInt(document.getElementById("humidityInput").value);
   let result = document.getElementById("waterResult");
 
-  // Conditionals + logical operators (required)
   if (isNaN(humidity) || humidity < 0 || humidity > 100) {
     result.textContent = "Enter a valid number between 0 and 100.";
     return;
   }
 
-  // Arithmetic + Math + toFixed() (required)
   let days = 7 - (humidity / 20) + Math.random();
   result.textContent = "Water every " + days.toFixed(1) + " days.";
 });
